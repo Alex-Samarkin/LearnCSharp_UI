@@ -52,8 +52,8 @@
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(85, 17);
-            this.toolStripStatusLabel1.Text = "О программе:";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(175, 17);
+            this.toolStripStatusLabel1.Text = "Выберите пункт \"Инструкции\"";
             // 
             // toolStripSplitButton1
             // 
@@ -86,6 +86,7 @@
             this.инструкцииToolStripMenuItem.Name = "инструкцииToolStripMenuItem";
             this.инструкцииToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.инструкцииToolStripMenuItem.Text = "Инструкции";
+            this.инструкцииToolStripMenuItem.Click += new System.EventHandler(this.инструкцииToolStripMenuItem_Click);
             // 
             // Form1
             // 

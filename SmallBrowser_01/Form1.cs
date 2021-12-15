@@ -22,5 +22,13 @@ namespace SmallBrowser_01
             AboutBox1 ab = new AboutBox1();
             ab.ShowDialog();
         }
+
+        private void инструкцииToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(@"Добавим к браузеру строку для ввода адреса, 
+кнопку для перехода по введенному адреcу и веб-браузер.
+Для элементов интерфейса добавим главное меню по верху формы, 
+браузер займет оставшееся пространство");
+        }
     }
 }
