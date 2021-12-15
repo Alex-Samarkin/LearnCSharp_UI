@@ -16,5 +16,11 @@ namespace SmallBrowser_01
         {
             InitializeComponent();
         }
+
+        private void окноОПрограммеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AboutBox1 ab = new AboutBox1();
+            ab.ShowDialog();
+        }
     }
 }

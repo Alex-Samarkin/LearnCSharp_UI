@@ -73,6 +73,7 @@
             this.окноОПрограммеToolStripMenuItem.Name = "окноОПрограммеToolStripMenuItem";
             this.окноОПрограммеToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.окноОПрограммеToolStripMenuItem.Text = "Окно \"О программе\"";
+            this.окноОПрограммеToolStripMenuItem.Click += new System.EventHandler(this.окноОПрограммеToolStripMenuItem_Click);
             // 
             // псковГУToolStripMenuItem
             // 
