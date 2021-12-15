@@ -15,6 +15,13 @@ namespace SmallBrowser_01
         public Form1()
         {
             InitializeComponent();
+
+            /// задаем браузеру для отображения адрес, заданный текстом
+            /// в меню
+            /// обратите внимание: СНАЧАЛА создаем все компоненты,
+            /// ПОТОМ, когда они "готовы" задаем их свойства
+            ///
+            webBrowser1.Url = new Uri(toolStripTextBox1.Text);
         }
 
         private void окноОПрограммеToolStripMenuItem_Click(object sender, EventArgs e)
