@@ -26,5 +26,18 @@ namespace HTML_Explorer
             }
 
         }
+
+        /// <summary>
+        /// вызываем операцию по передаче текста, когда весь документ будет загружен
+        /// иначе могут быть ошибки, зато сейчас будут тормоза
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+            /// браузер уммет преобразовывать свой документ
+            /// во вменяемый текст
+            textBox2.Text = webBrowser1.DocumentText;
+        }
     }
 }
