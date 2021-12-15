@@ -118,6 +118,7 @@
             this.toolStripTextBox1.Name = "toolStripTextBox1";
             this.toolStripTextBox1.Size = new System.Drawing.Size(500, 23);
             this.toolStripTextBox1.Text = "https://www.google.com";
+            this.toolStripTextBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.toolStripTextBox1_KeyPress);
             // 
             // toolStripComboBox1
             // 
