@@ -58,5 +58,11 @@ namespace SmallBrowser_01
                 webBrowser1.Url = new Uri(toolStripTextBox1.Text);
             }
         }
+
+        private void toolStripComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var address = $"https://{toolStripComboBox1.Text}";
+            webBrowser1.Url = new Uri(address);
+        }
     }
 }

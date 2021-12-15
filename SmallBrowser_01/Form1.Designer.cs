@@ -32,9 +32,9 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripSplitButton1 = new System.Windows.Forms.ToolStripSplitButton();
-            this.окноОПрограммеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.псковГУToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.инструкцииToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.псковГУToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.окноОПрограммеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.ТехтToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
@@ -74,12 +74,12 @@
             this.toolStripSplitButton1.Size = new System.Drawing.Size(32, 20);
             this.toolStripSplitButton1.Text = "toolStripSplitButton1";
             // 
-            // окноОПрограммеToolStripMenuItem
+            // инструкцииToolStripMenuItem
             // 
-            this.окноОПрограммеToolStripMenuItem.Name = "окноОПрограммеToolStripMenuItem";
-            this.окноОПрограммеToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
-            this.окноОПрограммеToolStripMenuItem.Text = "Окно \"О программе\"";
-            this.окноОПрограммеToolStripMenuItem.Click += new System.EventHandler(this.окноОПрограммеToolStripMenuItem_Click);
+            this.инструкцииToolStripMenuItem.Name = "инструкцииToolStripMenuItem";
+            this.инструкцииToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.инструкцииToolStripMenuItem.Text = "Инструкции";
+            this.инструкцииToolStripMenuItem.Click += new System.EventHandler(this.инструкцииToolStripMenuItem_Click);
             // 
             // псковГУToolStripMenuItem
             // 
@@ -87,12 +87,12 @@
             this.псковГУToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.псковГУToolStripMenuItem.Text = "2021 - ПсковГУ";
             // 
-            // инструкцииToolStripMenuItem
+            // окноОПрограммеToolStripMenuItem
             // 
-            this.инструкцииToolStripMenuItem.Name = "инструкцииToolStripMenuItem";
-            this.инструкцииToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
-            this.инструкцииToolStripMenuItem.Text = "Инструкции";
-            this.инструкцииToolStripMenuItem.Click += new System.EventHandler(this.инструкцииToolStripMenuItem_Click);
+            this.окноОПрограммеToolStripMenuItem.Name = "окноОПрограммеToolStripMenuItem";
+            this.окноОПрограммеToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.окноОПрограммеToolStripMenuItem.Text = "Окно \"О программе\"";
+            this.окноОПрограммеToolStripMenuItem.Click += new System.EventHandler(this.окноОПрограммеToolStripMenuItem_Click);
             // 
             // menuStrip1
             // 
@@ -123,12 +123,14 @@
             // toolStripComboBox1
             // 
             this.toolStripComboBox1.Items.AddRange(new object[] {
+            "www.pskgu.ru",
             "www.ya.ru",
             "www.mail.ru",
             "www.fbi.gov"});
             this.toolStripComboBox1.Name = "toolStripComboBox1";
             this.toolStripComboBox1.Size = new System.Drawing.Size(121, 23);
             this.toolStripComboBox1.Text = "www.pskgu.ru";
+            this.toolStripComboBox1.SelectedIndexChanged += new System.EventHandler(this.toolStripComboBox1_SelectedIndexChanged);
             // 
             // webBrowser1
             // 
