@@ -76,7 +76,7 @@ namespace ListToTextBox
             sb.Clear();
             foreach (double d in Data)
             {
-                sb.Append(d);
+                sb.AppendLine(d.ToString());
             }
 
             return sb.ToString();
