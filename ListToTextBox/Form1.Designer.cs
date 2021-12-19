@@ -53,7 +53,7 @@ namespace ListToTextBox
             this.textBox1.Location = new System.Drawing.Point(0, 0);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(639, 223);
+            this.textBox1.Size = new System.Drawing.Size(639, 150);
             this.textBox1.TabIndex = 0;
             this.textBox1.Text = resources.GetString("textBox1.Text");
             // 
@@ -67,7 +67,7 @@ namespace ListToTextBox
             this.tableLayoutPanel1.Controls.Add(this.button2, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.button3, 2, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 223);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 150);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -85,6 +85,7 @@ namespace ListToTextBox
             this.button1.TabIndex = 0;
             this.button1.Text = "<< Показать";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -97,6 +98,7 @@ namespace ListToTextBox
             this.button2.TabIndex = 1;
             this.button2.Text = "^^ Сгенерировать ^^";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -109,11 +111,12 @@ namespace ListToTextBox
             this.button3.TabIndex = 2;
             this.button3.Text = "Записать >>";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 262);
+            this.splitContainer1.Location = new System.Drawing.Point(0, 189);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -123,7 +126,7 @@ namespace ListToTextBox
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.textBox2);
-            this.splitContainer1.Size = new System.Drawing.Size(639, 509);
+            this.splitContainer1.Size = new System.Drawing.Size(639, 582);
             this.splitContainer1.SplitterDistance = 313;
             this.splitContainer1.TabIndex = 2;
             // 
@@ -132,7 +135,7 @@ namespace ListToTextBox
             this.propertyGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.propertyGrid1.Location = new System.Drawing.Point(0, 0);
             this.propertyGrid1.Name = "propertyGrid1";
-            this.propertyGrid1.Size = new System.Drawing.Size(313, 509);
+            this.propertyGrid1.Size = new System.Drawing.Size(313, 582);
             this.propertyGrid1.TabIndex = 0;
             // 
             // textBox2
@@ -141,7 +144,7 @@ namespace ListToTextBox
             this.textBox2.Location = new System.Drawing.Point(0, 0);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(322, 509);
+            this.textBox2.Size = new System.Drawing.Size(322, 582);
             this.textBox2.TabIndex = 0;
             // 
             // Form1

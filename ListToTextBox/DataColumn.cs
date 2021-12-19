@@ -102,6 +102,9 @@ namespace ListToTextBox
                 }
                 Data.Add(d);
             }
+
+            /// попробуйте закомментировать строку ниже
+            Data.RemoveAt(Data.Count-1);
         }
 
     }
