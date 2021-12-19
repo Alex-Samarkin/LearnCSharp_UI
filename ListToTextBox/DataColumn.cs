@@ -10,6 +10,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
@@ -59,6 +60,7 @@ namespace ListToTextBox
             {
                 Data.Add(r.NextDouble());
             }
+
         }
 
         /// <summary>
@@ -106,6 +108,42 @@ namespace ListToTextBox
             /// попробуйте закомментировать строку ниже
             Data.RemoveAt(Data.Count-1);
         }
+
+        #region Статистика
+
+        [Browsable(false)]
+        public double Sum => Data.Sum();
+        [Browsable(false)]
+        public double Count => Data.Count;
+        [Browsable(false)]
+        public double Min => Data.Min();
+        [Browsable(false)]
+        public double Max => Data.Max();
+        [Browsable(false)]
+        public double Avg => Data.Average();
+        [Browsable(false)]
+        public double SS
+        {
+            get
+            {
+                double ss = 0;
+                double avg = Avg;
+                foreach (double d in Data)
+                {
+                    ss += (d - avg) * (d - avg);
+                }
+
+                return ss;
+            }
+        }
+        [Browsable(false)]
+        public double Variance => SS / (Count - 1);
+        [Browsable(false)]
+        public double SD => Math.Sqrt(Variance);
+        [Browsable(true)]
+        public string Descr => $"N={Count} Min={Min} Max ={Max} Avg={Avg} Var={Variance} Sd={SD}";
+
+        #endregion
 
     }
 }
